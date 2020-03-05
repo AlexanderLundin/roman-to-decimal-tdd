@@ -1,4 +1,9 @@
 public class RomanToDecimal {
+
+    // ConvertRomanToDecimal
+    // Alex driving
+    // Jonathan navigating
+
     public Double ConvertRomanToDecimal(String string) {
         if(string.equals("I")){
             return 1.0;
@@ -18,6 +23,12 @@ public class RomanToDecimal {
 
         return null;
     }
+
+
+
+    // SumOfSymbols and sortStringDesc
+    // Jonathan driving
+    // Alex navigating
 
     public Double SumOfSymbols(String string) {
         Double year = 0.0;

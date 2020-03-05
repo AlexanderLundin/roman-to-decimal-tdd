@@ -8,13 +8,21 @@ import static org.junit.Assert.assertThat;
 public class TestRomanToDecimal {
     RomanToDecimal roman;
 
+    // Tests 1-7
+    // Alex driving
+    // Jonathan navigating
+
+    // Test 8 and 9
+    // Jonathan driving
+    // Alex navigating
+
     @Before
     public void Setup(){
         roman = new RomanToDecimal();
     }
 
     @Test
-    public void TestSymbolIToDecimal() {
+    public void Test1SymbolIToDecimal() {
         //Setup
         //Exercise
         Double convertedNumber = roman.ConvertRomanToDecimal("I");
@@ -25,7 +33,7 @@ public class TestRomanToDecimal {
     }
 
     @Test
-    public void TestSymbolVToDecimal() {
+    public void Test2SymbolVToDecimal() {
         //Setup
         //Exercise
         Double convertedNumber = roman.ConvertRomanToDecimal("V");
@@ -36,7 +44,7 @@ public class TestRomanToDecimal {
     }
 
     @Test
-    public void TestSymbolXToDecimal() {
+    public void Test3SymbolXToDecimal() {
         //Setup
         //Exercise
         Double convertedNumber = roman.ConvertRomanToDecimal("X");
@@ -47,7 +55,7 @@ public class TestRomanToDecimal {
     }
 
     @Test
-    public void TestSymbolLToDecimal() {
+    public void Test4SymbolLToDecimal() {
         //Setup
         //Exercise
         Double convertedNumber = roman.ConvertRomanToDecimal("L");
@@ -58,7 +66,7 @@ public class TestRomanToDecimal {
     }
 
     @Test
-    public void TestSymbolCToDecimal() {
+    public void Test5SymbolCToDecimal() {
         //Setup
         //Exercise
         Double convertedNumber = roman.ConvertRomanToDecimal("C");
@@ -69,7 +77,7 @@ public class TestRomanToDecimal {
     }
 
     @Test
-    public void TestSymbolDToDecimal() {
+    public void Test6SymbolDToDecimal() {
         //Setup
         //Exercise
         Double convertedNumber = roman.ConvertRomanToDecimal("D");
@@ -80,7 +88,7 @@ public class TestRomanToDecimal {
     }
 
     @Test
-    public void TestSymbolMToDecimal() {
+    public void Test7SymbolMToDecimal() {
         //Setup
         //Exercise
         Double convertedNumber = roman.ConvertRomanToDecimal("M");
@@ -91,7 +99,7 @@ public class TestRomanToDecimal {
     }
 
     @Test
-    public void TestAddingSymbolsToDecimal() {
+    public void Test8AddingSymbolsToDecimal() {
         //Setup
         //Exercise
         Double sumOfConvertedSymbols = roman.SumOfSymbols("MMVI");
@@ -102,7 +110,7 @@ public class TestRomanToDecimal {
     }
 
     @Test
-    public void TestAddingAndSubtractingSymbolsToDecimal() {
+    public void Test9AddingAndSubtractingSymbolsToDecimal() {
         //Setup
         //Exercise
         Double subAndSumOfConvertedSymbols = roman.sortStringDesc("MCMXLIV");
