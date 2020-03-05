@@ -90,14 +90,37 @@ public class TestRomanToDecimal {
         //Teardown
     }
 
+    @Test
+    public void TestAddingSymbolsToDecimal() {
+        //Setup
+        //Exercise
+        Double sumOfConvertedSymbols = roman.SumOfSymbols("MMVI");
+        Double actual = 2006.0;
+        //Assert
+        assertEquals(java.util.Optional.of(sumOfConvertedSymbols), java.util.Optional.of(actual));
+        //Teardown
+    }
+
+    @Test
+    public void TestAddingAndSubtractingSymbolsToDecimal() {
+        //Setup
+        //Exercise
+        Double subAndSumOfConvertedSymbols = roman.sortStringDesc("MCMXLIV");
+        Double actual = 1944.0;
+        //Assert
+        assertEquals(java.util.Optional.of(subAndSumOfConvertedSymbols), java.util.Optional.of(actual));
+    }
+
 //    roman-to-decimal-tdd
 //    TDD Kata converting roman numeral to decimal
 //
 //            RomanToDecimal
 //    Problem description
-//    The Kata says you should write a function to convert from Roman Numerals to decimal numerals. In order to keep the kata light, we will not check for valid Roman Numeral.
+//    The Kata says you should write a function to convert from Roman Numerals to decimal numerals. In order to
+//    keep the kata light, we will not check for valid Roman Numeral.
 //
-//    Roman numerals, the numeral system of ancient Rome, uses combinations of letters from the Latin alphabet to signify values. They are based on seven symbols:
+//    Roman numerals, the numeral system of ancient Rome, uses combinations of letters from the Latin alphabet to
+//    signify values. They are based on seven symbols:
 //
 //    Symbol	Value
 //    I	1
@@ -107,12 +130,14 @@ public class TestRomanToDecimal {
 //    C	100
 //    D	500
 //    M	1000
-//    Numbers are formed by combining symbols together and adding the values. Generally, symbols are placed in order of value, starting with the largest values. When smaller values precede larger values, the smaller values are subtracted from the larger values, and the result is added to the total.
+//    Numbers are formed by combining symbols together and adding the values. Generally, symbols are placed in
+//    order of value, starting with the largest values. When smaller values precede larger values,
+//    the smaller values are subtracted from the larger values, and the result is added to the total.
 //
 //            Example:
 //
 //    Roman Number	Computation	Value	Comment
 //    MMVI	1000 + 1000 + 5 + 1	2006	only addition
-//    MCMXLIV	1000 + (1000 - 100) + (50 - 10) + (5 - 1)	1944	addition and substraction
+//    MCMXLIV	1000 + (1000 - 100) + (50 - 10) + (5 - 1)	1944	addition and subtraction
 
 }
